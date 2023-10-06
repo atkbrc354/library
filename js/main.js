@@ -74,13 +74,34 @@ circlesTable.forEach((circle, index) => {
 const tab = document.querySelectorAll('.Favorites-cards');
 const labelRadio = document.querySelectorAll('.label-radio');
 
+// Function to hide tabs
 function hideTabContent(a) {
   for (let i = a; i < tab.length; i++) {
+    tab[i].classList.remove('show');
     tab[i].classList.add('hide');
   }
 }
 
+// Function to show tabs
+function showTabContent(b) {
+  if (tab[b].classList.contains('hide')) {
+    tab[b].classList.remove('hide');
+    tab[b].classList.add('show');
+  }
+}
+
+// Initially hide all tabs except the first one
 hideTabContent(1);
+
+// Add event listeners to labels
+for (let i = 0; i < labelRadio.length; i++) {
+  labelRadio[i].addEventListener('click', function() {
+    // When a label is clicked, hide all tabs
+    hideTabContent(0);
+    // And then show the clicked tab
+    showTabContent(i);
+  });
+}
 
 
 
