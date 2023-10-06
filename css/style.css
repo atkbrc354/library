@@ -1,0 +1,1308 @@
+.container {
+  max-width: 1440px;
+  margin: auto;
+}
+
+.wrapper {
+  max-width: 1400px;
+  padding: 0 20px;
+  margin: auto;
+}
+
+body {
+  font-family: "Forum", cursive;
+  font-weight: 400;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  background: #0C0C0E;
+}
+header .container .wrapper .header-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+header .container .wrapper .header-block h1.logo a {
+  font-size: 30px;
+  line-height: 50px;
+  letter-spacing: 0.6px;
+  color: #FFF;
+  text-decoration: none;
+}
+header .container .wrapper .header-block img.burger {
+  display: none;
+}
+header .container .wrapper .header-block nav {
+  margin-right: 40px;
+}
+header .container .wrapper .header-block nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+header .container .wrapper .header-block nav ul li {
+  margin-left: 30px;
+  list-style-type: none;
+}
+header .container .wrapper .header-block nav ul li a {
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  color: #fff;
+  font-size: 20px;
+  line-height: 50px;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+}
+header .container .wrapper .header-block nav ul li a:hover {
+  cursor: pointer;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+  color: #BB945F;
+}
+header .container .wrapper .header-block nav ul li:first-child {
+  margin-left: 0;
+}
+header .container .wrapper .header-block .tablet-nav a .Subtract {
+  margin-top: 10px;
+}
+
+main section.Welcome {
+  background: -webkit-gradient(linear, left top, left bottom, from(#0C0C0E), color-stop(0.01%, #0C0C0E), to(rgba(18, 18, 21, 0.1))), url("../img/Welcome.png");
+  background: linear-gradient(180deg, #0C0C0E 0%, #0C0C0E 0.01%, rgba(18, 18, 21, 0.1) 100%), url("../img/Welcome.png");
+  height: 600px;
+  margin-bottom: 20px;
+}
+main section.Welcome .container .wrapper .welcome-bg {
+  position: absolute;
+  margin-top: 220px;
+}
+main section.Welcome .container .wrapper .welcome-bg h2.welcome-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: -24px;
+  background: #0C0C0E;
+  max-width: 520px;
+  height: 200px;
+  text-align: center;
+  color: #FFF;
+  padding: 35px 40px 35px 40px;
+  font-size: 40px;
+  line-height: 50px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+main section.About .container .wrapper h2.About-title {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 40px;
+  line-height: 40px;
+  letter-spacing: 2px;
+  color: #0C0C0E;
+  text-transform: capitalize;
+  margin: 0 auto;
+  width: 106px;
+  height: 40px;
+  margin-bottom: 60px;
+}
+main section.About .container .wrapper h2.About-title:after {
+  content: "";
+  width: 50px;
+  height: 1px;
+  background-color: #0C0C0E;
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+main section.About .container .wrapper p.About-description {
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 40px;
+  margin-bottom: 20px;
+}
+main section.About .container .wrapper .About-sliders {
+  overflow-x: hidden;
+}
+main section.About .container .wrapper .About-sliders .About-cards-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1440px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  gap: 25px;
+  white-space: nowrap;
+  -webkit-transition: -webkit-transform 0.3s ease-out;
+  transition: -webkit-transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
+  transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
+  margin-bottom: 40px;
+}
+main section.About .container .wrapper .About-sliders .About-cards-img .image {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 33.3333333333%;
+  height: 100%;
+}
+main section.About .container .wrapper .About-sliders .block-circle-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 51px;
+}
+main section.About .container .wrapper .About-sliders .block-circle-cards .block-circle-card {
+  width: 26px;
+  height: 26px;
+}
+main section.About .container .wrapper .About-sliders .block-circle-cards .block-circle-card .circle {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #0C0C0E;
+}
+main section.About .container .wrapper .About-sliders .block-circle-cards .block-circle-card .active {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #BB945F;
+}
+main section.Favorites .container .wrapper h2.Favorites-title {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 40px;
+  line-height: 40px;
+  letter-spacing: 2px;
+  color: #0C0C0E;
+  text-transform: capitalize;
+  margin: 0 auto;
+  max-width: 160px;
+  width: 100%;
+  height: 40px;
+  margin-bottom: 60px;
+}
+main section.Favorites .container .wrapper h2.Favorites-title:after {
+  content: "";
+  width: 50px;
+  height: 1px;
+  background-color: #0C0C0E;
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+main section.Favorites .container .wrapper .input-card {
+  margin-right: 85px;
+}
+main section.Favorites .container .wrapper .input-card .input {
+  width: 17px;
+  height: 17px;
+}
+main section.Favorites .container .wrapper .input-card .input:hover {
+  cursor: pointer;
+}
+main section.Favorites .container .wrapper .input-card .input[type=radio]:checked + label {
+  font-weight: 700;
+}
+main section.Favorites .container .wrapper .input-card .label-radio {
+  font-size: 20px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  padding-left: 15px;
+}
+main section.Favorites .container .wrapper .input-card .label-radio:hover {
+  cursor: pointer;
+}
+main section.Favorites .container .wrapper p.Favorites-description {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 43px;
+}
+main section.Favorites .container .wrapper .form-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 40px;
+}
+main section.Favorites .container .wrapper .Favorites-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+main section.Favorites .container .wrapper .Favorites-cards.hide {
+  display: none;
+}
+main section.Favorites .container .wrapper .Favorites-cards.show {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+main section.Favorites .container .wrapper .Favorites-cards .Favorites-card {
+  position: relative;
+  border: 1px solid #0C0C0E;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  max-width: 550px;
+  width: 100%;
+  height: 555px;
+  margin-right: 41px;
+  padding: 15px 20px;
+  margin-bottom: 40px;
+}
+main section.Favorites .container .wrapper .Favorites-cards .Favorites-card .Favorites-card-desc {
+  font-size: 20px;
+  line-height: 40px;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  margin-bottom: 15px;
+}
+main section.Favorites .container .wrapper .Favorites-cards .Favorites-card .Favorites-card-desc:after {
+  content: "";
+  margin-top: -3px;
+  width: 55px;
+  height: 1px;
+  background-color: #BB945F;
+  display: block;
+}
+main section.Favorites .container .wrapper .Favorites-cards .Favorites-card .Favorites-card-desc_book {
+  font-size: 15px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-weight: 700;
+  letter-spacing: 2px;
+  line-height: 40px;
+  text-transform: uppercase;
+}
+main section.Favorites .container .wrapper .Favorites-cards .Favorites-card .Favorites-card-desc_dean {
+  font-size: 15px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-weight: 700;
+  letter-spacing: 2px;
+  line-height: 40px;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+main section.Favorites .container .wrapper .Favorites-cards .Favorites-card .Favorites-card-desc_story {
+  font-size: 15px;
+  max-width: 355px;
+  width: 100%;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  letter-spacing: 2px;
+  line-height: 40px;
+  text-transform: capitalize;
+  margin-bottom: 15px;
+}
+main section.Favorites .container .wrapper .Favorites-cards .Favorites-card .Favorites-img {
+  position: absolute;
+  top: 254px;
+  left: 390px;
+}
+main section.Favorites .container .wrapper .Favorites-cards .Favorites-card .Favorites-btn {
+  font-size: 10px;
+  position: absolute;
+  bottom: 14px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-weight: 700;
+  letter-spacing: 1px;
+  border-radius: 2px;
+  border: 1px solid #0C0C0E;
+  padding: 9px 27px;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+}
+main section.Favorites .container .wrapper .Favorites-cards .Favorites-card .Favorites-btn:hover {
+  cursor: pointer;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+  background: #BB945F;
+  border: 1px solid #BB945F;
+}
+main section.CoffeShop .container .wrapper h2.CoffeShop-title {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 40px;
+  line-height: 40px;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  margin-bottom: 40px;
+}
+main section.CoffeShop .container .wrapper h2.CoffeShop-title:after {
+  content: "";
+  width: 50px;
+  height: 1px;
+  background-color: #0C0C0E;
+  display: block;
+  margin: 0 auto;
+  margin-top: 17px;
+}
+main section.CoffeShop .container .wrapper p.CoffeShop-description {
+  text-align: center;
+  max-width: 1397px;
+  width: 100%;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 40px;
+  letter-spacing: 2px;
+  text-transform: lowercase;
+  margin-bottom: 40px;
+}
+main section.CoffeShop .container .wrapper .CoffeShop-cards-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+main section.CoffeShop .container .wrapper .CoffeShop-cards-list .CoffeShop-card-list-right {
+  max-width: 482px;
+  width: 100%;
+}
+main section.CoffeShop .container .wrapper .CoffeShop-cards-list .CoffeShop-card-list-right .right-title {
+  text-align: right;
+  color: #BB945F;
+  font-size: 40px;
+  line-height: 40px;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  margin-bottom: 40px;
+}
+main section.CoffeShop .container .wrapper .CoffeShop-cards-list .CoffeShop-card-list-right ul.CoffeShop-list-right {
+  text-align: right;
+}
+main section.CoffeShop .container .wrapper .CoffeShop-cards-list .CoffeShop-card-list-right ul.CoffeShop-list-right li {
+  position: relative;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  margin-right: 250px;
+  list-style-type: none;
+  margin-bottom: 40px;
+  font-size: 20px;
+  letter-spacing: 2px;
+  line-height: 40px;
+  text-transform: capitalize;
+}
+main section.CoffeShop .container .wrapper .CoffeShop-cards-list .CoffeShop-card-list-right ul.CoffeShop-list-right li span {
+  position: absolute;
+  top: 0;
+  right: -254px;
+  font-size: 20px;
+  line-height: 40px;
+  letter-spacing: 2p;
+}
+main section.CoffeShop .container .wrapper .CoffeShop-cards-list .CoffeShop-card-list-right ul.CoffeShop-list-right li:after {
+  content: "";
+  max-width: 100px;
+  width: 100%;
+  position: absolute;
+  top: 20px;
+  right: -161px;
+  height: 1px;
+  background-color: #BB945F;
+  display: inline-block;
+}
+main section.CoffeShop .container .wrapper .CoffeShop-cards-list .CoffeShop-card-list {
+  max-width: 438px;
+  width: 100%;
+}
+main section.CoffeShop .container .wrapper .CoffeShop-cards-list .CoffeShop-card-list .CoffeShop-card-title {
+  color: #BB945F;
+  font-size: 40px;
+  line-height: 40px;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  margin-bottom: 40px;
+}
+main section.CoffeShop .container .wrapper .CoffeShop-cards-list .CoffeShop-card-list ul.CoffeShop-list-left {
+  text-align: left;
+}
+main section.CoffeShop .container .wrapper .CoffeShop-cards-list .CoffeShop-card-list ul.CoffeShop-list-left li {
+  position: relative;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  text-transform: capitalize;
+  list-style-type: none;
+  margin-bottom: 40px;
+  font-size: 20px;
+  letter-spacing: 2px;
+  line-height: 40px;
+}
+main section.CoffeShop .container .wrapper .CoffeShop-cards-list .CoffeShop-card-list ul.CoffeShop-list-left li span {
+  position: absolute;
+  top: 0;
+  right: -3px;
+  font-size: 20px;
+  line-height: 40px;
+  letter-spacing: 2p;
+}
+main section.CoffeShop .container .wrapper .CoffeShop-cards-list .CoffeShop-card-list ul.CoffeShop-list-left li:after {
+  content: "";
+  max-width: 100px;
+  width: 100%;
+  position: absolute;
+  top: 20px;
+  right: 82px;
+  height: 1px;
+  background-color: #BB945F;
+  display: inline-block;
+}
+main section.Contacts {
+  margin-bottom: 40px;
+}
+main section.Contacts .container .wrapper h2.Contacts-title {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 40px;
+  line-height: 40px;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  margin-bottom: 40px;
+}
+main section.Contacts .container .wrapper h2.Contacts-title:after {
+  content: "";
+  max-width: 50px;
+  width: 100%;
+  height: 1px;
+  background-color: #0C0C0E;
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+main section.Contacts .container .wrapper .Contacts-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+main section.Contacts .container .wrapper .Contacts-block .Contacts-description .Contacts-title-question {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  margin-bottom: 40px;
+}
+main section.Contacts .container .wrapper .Contacts-block .Contacts-description .Contacts-desc_contacts-staff .Contacts-desc_staff {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  letter-spacing: 2px;
+  line-height: 40px;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+main section.Contacts .container .wrapper .Contacts-block .Contacts-description .Contacts-title-staff {
+  margin-top: 39px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  letter-spacing: 2px;
+  font-weight: 700;
+  line-height: 40px;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+main section.Contacts .container .wrapper .Contacts-block .Contacts-description .Contacts-desc_contacts-director .Contacts-desc_director {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  display: inline-block;
+  margin-right: 7px;
+  font-size: 20px;
+  letter-spacing: 2px;
+  line-height: 40px;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+main section.Contacts .container .wrapper .Contacts-block .Contacts-description .Contacts-desc_contacts-director .Contacts-desc_name {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  letter-spacing: 2px;
+  font-weight: 700;
+  line-height: 40px;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+main section.Contacts .container .wrapper .Contacts-block .Contacts-map .map {
+  max-width: 696px;
+  width: 100%;
+  max-height: 414px;
+  border: 0;
+}
+main section.LibraryCard .container .wrapper .LibraryCard-title {
+  margin-top: 58px;
+  text-align: center;
+  font-size: 40px;
+  line-height: 40px;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  margin-bottom: 40px;
+}
+main section.LibraryCard .container .wrapper h2.LibraryCard-title:after {
+  content: "";
+  width: 50px;
+  height: 1px;
+  background-color: #0C0C0E;
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+main section.LibraryCard .container .wrapper .LibraryCard-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 37px;
+}
+main section.LibraryCard .container .wrapper .LibraryCard-block .LibraryCard-form {
+  width: 50%;
+}
+main section.LibraryCard .container .wrapper .LibraryCard-block .LibraryCard-form h4.LibraryCard-form_title {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  text-align: center;
+  font-size: 30px;
+  letter-spacing: 0.6px;
+  margin-bottom: 29px;
+}
+main section.LibraryCard .container .wrapper .LibraryCard-block .LibraryCard-form .form {
+  display: block;
+  max-width: 560px;
+  border: 3px solid #BB945F;
+  padding: 20px 20px 30px 20px;
+}
+main section.LibraryCard .container .wrapper .LibraryCard-block .LibraryCard-form .form .form-inrut {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 560px;
+  height: 292px;
+  background: #BB945F;
+}
+main section.LibraryCard .container .wrapper .LibraryCard-block .LibraryCard-form .form .form-inrut .form-title {
+  margin-top: 20px;
+  font-size: 30px;
+  line-height: 50px;
+  letter-spacing: 0.6px;
+  margin-bottom: 20px;
+}
+main section.LibraryCard .container .wrapper .LibraryCard-block .LibraryCard-form .form .form-inrut .input-name {
+  border-radius: 10px;
+  border: 0;
+  max-width: 520px;
+  margin-bottom: 25px;
+}
+main section.LibraryCard .container .wrapper .LibraryCard-block .LibraryCard-form .form .form-inrut .input-name:hover {
+  cursor: pointer;
+}
+main section.LibraryCard .container .wrapper .LibraryCard-block .LibraryCard-form .form .form-inrut .input-name:focus {
+  outline: none;
+}
+main section.LibraryCard .container .wrapper .LibraryCard-block .LibraryCard-form .form .form-inrut .input-name[placeholder] {
+  font-size: 30px;
+  color: #8E8E8E;
+  line-height: 50px;
+  letter-spacing: 0.6px;
+  padding: 8px 20px 8px 20px;
+}
+main section.LibraryCard .container .wrapper .LibraryCard-block .LibraryCard-form .form .form-inrut .input-number {
+  border-radius: 10px;
+  border: 0;
+  max-width: 520px;
+  margin-bottom: 25px;
+}
+main section.LibraryCard .container .wrapper .LibraryCard-block .LibraryCard-form .form .form-inrut .input-number:hover {
+  cursor: pointer;
+}
+main section.LibraryCard .container .wrapper .LibraryCard-block .LibraryCard-form .form .form-inrut .input-number:focus {
+  outline: none;
+}
+main section.LibraryCard .container .wrapper .LibraryCard-block .LibraryCard-form .form .form-inrut .input-number[placeholder] {
+  font-size: 30px;
+  color: #8E8E8E;
+  line-height: 50px;
+  letter-spacing: 0.6px;
+  padding: 8px 20px 8px 20px;
+}
+main section.LibraryCard .container .wrapper .LibraryCard-block .LibraryCard-form .form .form-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  margin-top: 15px;
+  font-size: 20px;
+  background: #fff;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  letter-spacing: 1px;
+  border-radius: 2px;
+  border: 1px solid #0C0C0E;
+  padding: 10px 40px;
+  font-weight: 700;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+}
+main section.LibraryCard .container .wrapper .LibraryCard-block .LibraryCard-form .form .form-btn:hover {
+  cursor: pointer;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+  background: #BB945F;
+  border: 1px solid #BB945F;
+}
+main section.LibraryCard .container .wrapper .LibraryCard-block .LibraryCard-right .LibraryCard-right_title {
+  text-align: right;
+  font-size: 30px;
+  letter-spacing: 0.6px;
+  margin-bottom: 35px;
+}
+main section.LibraryCard .container .wrapper .LibraryCard-block .LibraryCard-right .LibraryCard-rigth_desc {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  text-align: right;
+  max-width: 456px;
+  font-size: 20px;
+  letter-spacing: 0.4px;
+  line-height: 40px;
+  margin-bottom: 35px;
+}
+main section.LibraryCard .container .wrapper .LibraryCard-block .LibraryCard-right .Sign-Up {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  width: 75px;
+  height: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-left: 284px;
+  margin-right: 20px;
+  padding: 10px 0px;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+}
+main section.LibraryCard .container .wrapper .LibraryCard-block .LibraryCard-right .Sign-Up:hover {
+  cursor: pointer;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+  background: #BB945F;
+  border: 1px solid #BB945F;
+}
+main section.LibraryCard .container .wrapper .LibraryCard-block .LibraryCard-right .Log-in {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  width: 75px;
+  height: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 10px 0px;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+}
+main section.LibraryCard .container .wrapper .LibraryCard-block .LibraryCard-right .Log-in:hover {
+  cursor: pointer;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+  background: #BB945F;
+  border: 1px solid #BB945F;
+}
+
+footer {
+  background: #0C0C0E;
+  position: relative;
+}
+footer .container .wrapper .block-footer_top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+footer .container .wrapper .block-footer_top .block-footer_top-left .top-left-description {
+  padding-top: 19px;
+  color: #FFF;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  width: 229px;
+  padding-bottom: 18px;
+}
+footer .container .wrapper .block-footer_top .block-footer_top-left .footer-block_icons {
+  padding-bottom: 31px;
+}
+footer .container .wrapper .block-footer_top .block-footer_top-left .footer-block_icons img {
+  margin-right: 11px;
+}
+footer .container .wrapper .block-footer_top .block-footer_top-left .footer-block_icons img:hover {
+  cursor: pointer;
+}
+footer .container .wrapper .block-footer_top .block-footer_top-right .desc-time {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  padding-top: 20px;
+  text-align: right;
+  width: 149px;
+  font-size: 15px;
+  line-height: 20px;
+  color: #FFF;
+}
+footer .container .wrapper .block-footer_top .block-footer_top-right .desc-time-bottom {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  padding-top: 10px;
+  text-align: right;
+  width: 149px;
+  font-size: 15px;
+  line-height: 20px;
+  color: #FFF;
+}
+footer .container .wrapper .block-footer_bottom {
+  border-top: 1px solid #fff;
+  padding-top: 46px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+footer .container .wrapper .block-footer_bottom .desc-year {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  color: #FFF;
+  font-size: 15px;
+  line-height: 15px;
+  letter-spacing: 2px;
+  padding-bottom: 44px;
+}
+footer .container .wrapper .block-footer_bottom .desc-school a {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  color: #FFF;
+  text-decoration: none;
+  margin-left: 65px;
+  font-size: 15px;
+  line-height: 15px;
+  letter-spacing: 2px;
+}
+footer .container .wrapper .block-footer_bottom .desc-username a {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+  color: #FFF;
+  font-size: 15px;
+  line-height: 15px;
+  letter-spacing: 2px;
+}
+
+@media screen and (max-width: 1280px) {
+  header .container .wrapper .header-block {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main section.About .container .wrapper .About-sliders .About-cards-img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  main section.About .container .wrapper .About-sliders .About-cards-img .image {
+    max-width: 450px;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    margin: auto;
+    width: 50%;
+    height: 100%;
+  }
+  main section.About .container .wrapper .About-sliders .block-circle-cards {
+    display: none;
+  }
+  main section.About .container .wrapper .About-sliders .block-circle-cards-table {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 51px;
+  }
+  main section.About .container .wrapper .About-sliders .block-circle-cards-table .block-circle-card-table {
+    width: 26px;
+    height: 26px;
+  }
+  main section.About .container .wrapper .About-sliders .block-circle-cards-table .block-circle-card-table .circle-table {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #0C0C0E;
+  }
+  main section.About .container .wrapper .About-sliders .block-circle-cards-table .block-circle-card-table .active-table {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #BB945F;
+  }
+  main section.CoffeShop .container .wrapper .CoffeShop-cards-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main section.CoffeShop .container .wrapper .CoffeShop-cards-list .CoffeShop-card-list-left {
+    margin-bottom: 30px;
+  }
+  main section.Contacts .container .wrapper .Contacts-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main section.Favorites .container .wrapper .Favorites-cards {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  main section.LibraryCard .container .wrapper .LibraryCard-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main section.LibraryCard .container .wrapper .LibraryCard-block .LibraryCard-form {
+    margin: 0 auto;
+    width: 70%;
+    margin-bottom: 30px;
+  }
+  main section.LibraryCard .container .wrapper .LibraryCard-block .LibraryCard-right .LibraryCard-right_title {
+    text-align: center;
+  }
+  main section.LibraryCard .container .wrapper .LibraryCard-block .LibraryCard-right .LibraryCard-rigth_desc {
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  main section.LibraryCard .container .wrapper .LibraryCard-block .LibraryCard-right .LibraryCard-cards-btn {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main section.LibraryCard .container .wrapper .LibraryCard-block .LibraryCard-right .LibraryCard-cards-btn .Sign-Up {
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 1150px) {
+  main section.Favorites .container .wrapper .form-group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 10px;
+  }
+  main section.LibraryCard .container .wrapper .LibraryCard-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main section.LibraryCard .container .wrapper .LibraryCard-block .LibraryCard-form {
+    margin: 0 auto;
+    width: 90%;
+    margin-bottom: 30px;
+  }
+  main section.LibraryCard .container .wrapper .LibraryCard-block .LibraryCard-right .LibraryCard-right_title {
+    text-align: center;
+  }
+  main section.LibraryCard .container .wrapper .LibraryCard-block .LibraryCard-right .LibraryCard-rigth_desc {
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  main section.LibraryCard .container .wrapper .LibraryCard-block .LibraryCard-right .LibraryCard-cards-btn {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main section.LibraryCard .container .wrapper .LibraryCard-block .LibraryCard-right .LibraryCard-cards-btn .Sign-Up {
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  header .container .wrapper .header-block {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  header .container .wrapper .header-block nav {
+    display: none;
+  }
+  header .container .wrapper .header-block .tablet-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  header .container .wrapper .header-block .tablet-nav img.burger {
+    display: block;
+    margin-top: -3px;
+  }
+  header .container .wrapper .header-block .Subtract {
+    margin-right: 40px;
+  }
+  main section.About .container .wrapper .About-sliders .About-cards-img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  main section.About .container .wrapper .About-sliders .About-cards-img .image {
+    max-width: 450px;
+    margin: auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+  main section.About .container .wrapper .About-sliders .block-circle-cards-table {
+    display: none;
+  }
+  main section.About .container .wrapper .About-sliders .block-circle-cards-mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 51px;
+  }
+  main section.About .container .wrapper .About-sliders .block-circle-cards-mobile .block-circle-card-mobile {
+    width: 26px;
+    height: 26px;
+  }
+  main section.About .container .wrapper .About-sliders .block-circle-cards-mobile .block-circle-card-mobile .circle-mobile {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #0C0C0E;
+  }
+  main section.About .container .wrapper .About-sliders .block-circle-cards-mobile .block-circle-card-mobile .active-mobile {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #BB945F;
+  }
+  main section.Favorites .container .wrapper .form-group .label-radio {
+    margin-right: 20px;
+    font-size: 12px;
+  }
+  main section.Favorites .container .wrapper .form-group .label-radio:last-child {
+    margin-right: 0px;
+  }
+  main section.Favorites .container .wrapper .Favorites-cards .Favorites-card {
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+  main section.Favorites .container .wrapper .Favorites-cards .Favorites-card .Favorites-img {
+    display: none;
+  }
+  main section.Favorites .container .wrapper .Favorites-cards .Favorites-card:last-child {
+    margin-bottom: 0px;
+  }
+  main section.CoffeShop .container .wrapper .CoffeShop-cards-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main section.CoffeShop .container .wrapper .CoffeShop-cards-list .CoffeShop-card-list-left {
+    margin-bottom: 30px;
+  }
+  main section.Contacts .container .wrapper .Contacts-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main section.LibraryCard .container .wrapper .LibraryCard-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main section.LibraryCard .container .wrapper .LibraryCard-block .LibraryCard-form {
+    margin-bottom: 30px;
+  }
+  main section.LibraryCard .container .wrapper .LibraryCard-block .LibraryCard-right .LibraryCard-right_title {
+    text-align: center;
+  }
+  main section.LibraryCard .container .wrapper .LibraryCard-block .LibraryCard-right .LibraryCard-rigth_desc {
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 510px) {
+  header .container .wrapper .header-block h1.logo a {
+    font-size: 20px;
+    line-height: 20px;
+  }
+  main section.Welcome .container .wrapper .welcome-bg h2.welcome-title {
+    font-size: 20px;
+  }
+  main section.About .container .wrapper .About-sliders .About-cards-img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  main section.About .container .wrapper .About-sliders .About-cards-img .image {
+    max-width: 450px;
+    margin: auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+  main section.About .container .wrapper .About-sliders .block-circle-cards-table {
+    display: none;
+  }
+  main section.About .container .wrapper .About-sliders .block-circle-cards-mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 51px;
+  }
+  main section.About .container .wrapper .About-sliders .block-circle-cards-mobile .block-circle-card-mobile {
+    width: 26px;
+    height: 26px;
+  }
+  main section.About .container .wrapper .About-sliders .block-circle-cards-mobile .block-circle-card-mobile .circle-mobile {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #0C0C0E;
+  }
+  main section.About .container .wrapper .About-sliders .block-circle-cards-mobile .block-circle-card-mobile .active-mobile {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #BB945F;
+  }
+  main section.Favorites .container .wrapper .input {
+    margin-right: 10px;
+  }
+  main section.Favorites .container .wrapper .form-group .label-radio {
+    margin-right: 10px;
+    font-size: 10px;
+  }
+  main section.Favorites .container .wrapper .form-group .label-radio:last-child {
+    margin-right: 0px;
+  }
+  main section.Favorites .container .wrapper .Favorites-cards .Favorites-card {
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+  main section.Favorites .container .wrapper .Favorites-cards .Favorites-card .Favorites-card-desc_book {
+    font-size: 13px;
+    line-height: 20px;
+  }
+  main section.Favorites .container .wrapper .Favorites-cards .Favorites-card .Favorites-card-desc_dean {
+    font-size: 13px;
+  }
+  main section.Favorites .container .wrapper .Favorites-cards .Favorites-card .Favorites-card-desc_story {
+    font-size: 10px;
+    line-height: 30px;
+  }
+  main section.Favorites .container .wrapper .Favorites-cards .Favorites-card .Favorites-img {
+    display: none;
+  }
+  main section.Favorites .container .wrapper .Favorites-cards .Favorites-card:last-child {
+    margin-bottom: 0px;
+  }
+  main section.CoffeShop .container .wrapper .CoffeShop-cards-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main section.CoffeShop .container .wrapper .CoffeShop-cards-list .CoffeShop-card-list ul.CoffeShop-list-left li:after {
+    display: none;
+  }
+  main section.CoffeShop .container .wrapper .CoffeShop-cards-list .CoffeShop-card-list-right ul.CoffeShop-list-right li:after {
+    display: none;
+  }
+  main section.Contacts .container .wrapper .Contacts-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main section.LibraryCard .container .wrapper .LibraryCard-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main section.LibraryCard .container .wrapper .LibraryCard-block .LibraryCard-form {
+    margin-bottom: 30px;
+  }
+  main section.LibraryCard .container .wrapper .LibraryCard-block .LibraryCard-form .form .form-inrut {
+    min-height: 275px;
+  }
+  main section.LibraryCard .container .wrapper .LibraryCard-block .LibraryCard-form .form .form-inrut .form-title {
+    margin-top: 0;
+    font-size: 20px;
+    margin-bottom: 0;
+  }
+  main section.LibraryCard .container .wrapper .LibraryCard-block .LibraryCard-form .form .form-inrut .input-name[placeholder] {
+    font-size: 15px;
+  }
+  main section.LibraryCard .container .wrapper .LibraryCard-block .LibraryCard-form .form .form-inrut .input-number[placeholder] {
+    font-size: 15px;
+  }
+  main section.LibraryCard .container .wrapper .LibraryCard-block .LibraryCard-form .form .form-btn {
+    font-size: 10px;
+  }
+  main section.LibraryCard .container .wrapper .LibraryCard-block .LibraryCard-right .LibraryCard-right_title {
+    text-align: center;
+  }
+  main section.LibraryCard .container .wrapper .LibraryCard-block .LibraryCard-right .LibraryCard-rigth_desc {
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  footer .container .wrapper .block-footer_bottom {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer .container .wrapper .block-footer_bottom .desc-school {
+    padding-bottom: 20px;
+  }
+  footer .container .wrapper .block-footer_bottom .desc-school a {
+    margin-left: 0px;
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,1042 @@
+$brown-light: #BB945F
+$Smoky-white: #EDF2EC
+$black: #0C0C0E
+
+@mixin forum-font
+    font-family: 'Forum', cursive
+    font-weight: 400
+
+@mixin inter-font
+    font-family: 'Inter', sans-serif
+    font-weight: 400
+
+.container
+    max-width: 1440px
+    margin: auto
+
+.wrapper
+    max-width: 1400px
+    padding: 0 20px
+    margin: auto
+
+body
+    @include forum-font
+
+html
+    scroll-behavior: smooth
+
+*
+    box-sizing: border-box
+    padding: 0
+    margin: 0
+
+header
+    background: $black
+    .container
+        .wrapper
+            .header-block
+                display: flex
+                justify-content: space-between
+                padding-top: 20px
+                padding-bottom: 20px
+                h1.logo
+                    a
+                        font-size: 30px
+                        line-height: 50px
+                        letter-spacing: 0.6px
+                        color: #FFF
+                        text-decoration: none
+
+                img.burger
+                    display: none
+                nav
+                    margin-right: 40px
+                    ul
+                        display: flex
+                        li
+                            margin-left: 30px
+                            list-style-type: none
+                            a
+                                text-decoration: none
+                                @include inter-font
+                                color: #fff
+                                font-size: 20px
+                                line-height: 50px
+                                transition: all 300ms
+                                &:hover
+                                    cursor: pointer
+                                    transition: all 300ms
+                                    color: $brown-light
+                        li:first-child
+                            margin-left: 0
+                .tablet-nav
+                    a
+                        .Subtract
+                            margin-top: 10px
+main
+    section.Welcome
+        background: linear-gradient(180deg, #0C0C0E 0%, #0C0C0E 0.01%, rgba(18, 18, 21, 0.10) 100%), url('../img/Welcome.png')
+        height: 600px
+        margin-bottom: 20px
+        .container
+            .wrapper
+                .welcome-bg
+                    position: absolute
+                    margin-top: 220px
+                    h2.welcome-title
+                        display: flex
+                        justify-content: center
+                        align-items: center
+                        margin-left: -24px
+                        background: $black
+                        max-width: 520px
+                        height: 200px
+                        text-align: center
+                        color: #FFF
+                        padding: 35px 40px 35px 40px
+                        font-size: 40px
+                        line-height: 50px
+                        letter-spacing: 3px
+                        text-transform: uppercase
+    section.About
+        .container
+            .wrapper
+                h2.About-title
+                    box-sizing: border-box
+                    font-size: 40px
+                    line-height: 40px
+                    letter-spacing: 2px
+                    color: $black
+                    text-transform: capitalize
+                    margin: 0 auto
+                    width: 106px
+                    height: 40px
+                    margin-bottom: 60px
+                h2.About-title:after
+                    content: ''
+                    width: 50px
+                    height: 1px
+                    background-color: $black
+                    display: block
+                    margin: 0 auto
+                    margin-top: 20px
+                p.About-description
+                    text-align: center
+                    @include inter-font
+                    font-size: 20px
+                    line-height: 40px
+                    margin-bottom: 20px
+                .About-sliders
+                    overflow-x: hidden
+                    .About-cards-img
+                        display: flex
+                        max-width: 1440px
+                        justify-content: space-between
+                        align-items: center
+                        width: 100%
+                        gap: 25px
+                        white-space: nowrap
+                        transition: transform 0.3s ease-out
+                        margin-bottom: 40px
+                        .image
+                            object-fit: cover
+                            width: calc( 100% / 3)
+                            height: 100%
+                    .block-circle-cards
+                        display: flex
+                        justify-content: center
+                        margin-bottom: 51px
+                        .block-circle-card
+                            width: 26px
+                            height: 26px
+                            .circle
+                                width: 16px
+                                height: 16px
+                                border-radius: 50%
+                                background: #0C0C0E
+                            .active
+                                width: 16px
+                                height: 16px
+                                border-radius: 50%
+                                background: #BB945F
+    section.Favorites
+        .container
+            .wrapper
+                h2.Favorites-title
+                    box-sizing: border-box
+                    font-size: 40px
+                    line-height: 40px
+                    letter-spacing: 2px
+                    color: $black
+                    text-transform: capitalize
+                    margin: 0 auto
+                    max-width: 160px
+                    width: 100%
+                    height: 40px
+                    margin-bottom: 60px
+                h2.Favorites-title:after
+                    content: ''
+                    width: 50px
+                    height: 1px
+                    background-color: $black
+                    display: block
+                    margin: 0 auto
+                    margin-top: 20px
+                .input-card
+                    margin-right: 85px
+                    .input
+                        width: 17px
+                        height: 17px
+                    .input:hover
+                        cursor: pointer
+                    .input[type="radio"]:checked+label
+                        font-weight: 700
+                    .label-radio
+                        font-size: 20px
+                        @include inter-font
+                        padding-left: 15px
+                    .label-radio:hover
+                        cursor: pointer
+                p.Favorites-description
+                    @include inter-font
+                    font-size: 20px
+                    font-weight: 700
+                    line-height: normal
+                    margin-bottom: 43px
+                .form-group
+                    display: flex
+                    margin-bottom: 40px
+                .Favorites-cards
+                    display: flex
+                    justify-content: space-between
+                    flex-wrap: wrap
+                    &.hide
+                        display: none
+                    &.show
+                        display: flex
+                    .Favorites-card
+                        position: relative
+                        border: 1px solid $black
+                        box-sizing: border-box
+                        max-width: 550px
+                        width: 100%
+                        height: 555px
+                        margin-right: 41px
+                        padding: 15px 20px
+                        margin-bottom: 40px
+
+                        .Favorites-card-desc
+                            font-size: 20px
+                            line-height: 40px
+                            letter-spacing: 2px
+                            text-transform: capitalize
+                            margin-bottom: 15px
+                        .Favorites-card-desc:after
+                            content: ''
+                            margin-top: -3px
+                            width: 55px
+                            height: 1px
+                            background-color: #BB945F
+                            display: block
+                        .Favorites-card-desc_book
+                            font-size: 15px
+                            @include inter-font
+                            font-weight: 700
+                            letter-spacing: 2px
+                            line-height: 40px
+                            text-transform: uppercase
+                        .Favorites-card-desc_dean
+                            font-size: 15px
+                            @include inter-font
+                            font-weight: 700
+                            letter-spacing: 2px
+                            line-height: 40px
+                            text-transform: capitalize
+                            margin-bottom: 20px
+                        .Favorites-card-desc_story
+                            font-size: 15px
+                            max-width: 355px
+                            width: 100%
+                            @include inter-font
+                            letter-spacing: 2px
+                            line-height: 40px
+                            text-transform: capitalize
+                            margin-bottom: 15px
+                        .Favorites-img
+                            position: absolute
+                            top: 254px
+                            left: 390px
+                        .Favorites-btn
+                            font-size: 10px
+                            position: absolute
+                            bottom: 14px
+                            @include inter-font
+                            font-weight: 700
+                            letter-spacing: 1px
+                            border-radius: 2px
+                            border: 1px solid $black
+                            padding: 9px 27px
+                            transition: all 300ms
+                            &:hover
+                                cursor: pointer
+                                transition: all 300ms
+                                background: $brown-light
+                                border: 1px solid $brown-light              
+    section.CoffeShop
+        .container
+            .wrapper
+                h2.CoffeShop-title
+                    text-align: center
+                    margin-top: 20px
+                    font-size: 40px
+                    line-height: 40px
+                    letter-spacing: 2px
+                    text-transform: capitalize
+                    margin-bottom: 40px
+                h2.CoffeShop-title:after
+                    content: ''
+                    width: 50px
+                    height: 1px
+                    background-color: $black
+                    display: block
+                    margin: 0 auto
+                    margin-top: 17px
+                p.CoffeShop-description
+                    text-align: center
+                    max-width: 1397px
+                    width: 100%
+                    @include inter-font
+                    font-size: 20px
+                    line-height: 40px
+                    letter-spacing: 2px
+                    text-transform: lowercase
+                    margin-bottom: 40px
+                .CoffeShop-cards-list
+                    display: flex
+                    justify-content: space-between
+                    .CoffeShop-card-list-right
+                        max-width: 482px
+                        width: 100%
+                        .right-title
+                            text-align: right
+                            color: $brown-light
+                            font-size: 40px
+                            line-height: 40px
+                            letter-spacing: 2px
+                            text-transform: capitalize
+                            margin-bottom: 40px
+                        ul.CoffeShop-list-right
+                            text-align: right
+                            li
+                                position: relative
+                                @include inter-font
+                                margin-right: 250px
+                                list-style-type: none
+                                margin-bottom: 40px
+                                font-size: 20px
+                                letter-spacing: 2px
+                                line-height: 40px
+                                text-transform: capitalize
+                                span
+                                    position: absolute
+                                    top: 0
+                                    right: -254px
+                                    font-size: 20px
+                                    line-height: 40px
+                                    letter-spacing: 2p
+                            li:after
+                                content: ''
+                                max-width: 100px
+                                width: 100%
+                                position: absolute
+                                top: 20px
+                                right: -161px
+                                height: 1px
+                                background-color: $brown-light
+                                display: inline-block
+                    .CoffeShop-card-list
+                        max-width: 438px
+                        width: 100%
+                        .CoffeShop-card-title
+                            color: $brown-light
+                            font-size: 40px
+                            line-height: 40px
+                            letter-spacing: 2px
+                            text-transform: capitalize
+                            margin-bottom: 40px
+                        ul.CoffeShop-list-left
+                            text-align: left
+                            li
+                                position: relative
+                                @include inter-font
+                                text-transform: capitalize
+                                list-style-type: none
+                                margin-bottom: 40px
+                                font-size: 20px
+                                letter-spacing: 2px
+                                line-height: 40px
+                                span
+                                    position: absolute
+                                    top: 0
+                                    right: -3px
+                                    font-size: 20px
+                                    line-height: 40px
+                                    letter-spacing: 2p
+                            li:after
+                                content: ''
+                                max-width: 100px
+                                width: 100%
+                                position: absolute
+                                top: 20px
+                                right: 82px
+                                height: 1px
+                                background-color: $brown-light
+                                display: inline-block
+    section.Contacts
+        margin-bottom: 40px
+        .container
+            .wrapper
+                h2.Contacts-title
+                    margin-top: 20px
+                    text-align: center
+                    font-size: 40px
+                    line-height: 40px
+                    letter-spacing: 2px
+                    text-transform: capitalize
+                    margin-bottom: 40px
+                h2.Contacts-title:after
+                    content: ''
+                    max-width: 50px
+                    width: 100%
+                    height: 1px
+                    background-color: $black
+                    display: block
+                    margin: 0 auto
+                    margin-top: 20px
+                .Contacts-block
+                    display: flex
+                    justify-content: space-between
+                    .Contacts-description
+                        .Contacts-title-question
+                            @include inter-font
+                            font-size: 20px
+                            font-weight: 700
+                            line-height: 40px
+                            letter-spacing: 2px
+                            text-transform: capitalize
+                            margin-bottom: 40px
+                        .Contacts-desc_contacts-staff
+                            .Contacts-desc_staff
+                                @include inter-font
+                                font-size: 20px
+                                letter-spacing: 2px
+                                line-height: 40px
+                                text-transform: capitalize
+                                margin-bottom: 20px
+                        .Contacts-title-staff
+                            margin-top: 39px
+                            @include inter-font
+                            font-size: 20px
+                            letter-spacing: 2px
+                            font-weight: 700
+                            line-height: 40px
+                            text-transform: capitalize
+                            margin-bottom: 20px
+                        .Contacts-desc_contacts-director
+                            .Contacts-desc_director
+                                @include inter-font
+                                display: inline-block
+                                margin-right: 7px
+                                font-size: 20px
+                                letter-spacing: 2px
+                                line-height: 40px
+                                text-transform: capitalize
+                                margin-bottom: 20px
+                            .Contacts-desc_name
+                                @include inter-font
+                                font-size: 20px
+                                letter-spacing: 2px
+                                font-weight: 700
+                                line-height: 40px
+                                text-transform: capitalize
+                                margin-bottom: 20px
+                    .Contacts-map
+                        .map
+                            max-width: 696px
+                            width: 100%
+                            max-height: 414px
+                            border: 0
+    section.LibraryCard
+        .container
+            .wrapper
+                .LibraryCard-title
+                    margin-top: 58px
+                    text-align: center
+                    font-size: 40px
+                    line-height: 40px
+                    letter-spacing: 2px
+                    text-transform: capitalize
+                    margin-bottom: 40px
+                h2.LibraryCard-title:after
+                    content: ''
+                    width: 50px
+                    height: 1px
+                    background-color: $black
+                    display: block
+                    margin: 0 auto
+                    margin-top: 20px
+                .LibraryCard-block
+                    display: flex
+                    justify-content: space-between
+                    margin-bottom: 37px
+                    .LibraryCard-form
+                        width: 50%
+                        h4.LibraryCard-form_title
+                            @include inter-font
+                            text-align: center
+                            font-size: 30px
+                            letter-spacing: 0.6px
+                            margin-bottom: 29px
+                        .form
+                            display: block
+                            max-width: 560px
+                            border: 3px solid #BB945F
+                            padding: 20px 20px 30px 20px
+                            .form-inrut
+                                display: flex
+                                padding: 20px
+                                flex-direction: column
+                                max-width: 560px
+                                height: 292px
+                                background: $brown-light
+                                .form-title
+                                    margin-top: 20px
+                                    font-size: 30px
+                                    line-height: 50px
+                                    letter-spacing: 0.6px
+                                    margin-bottom: 20px
+                                .input-name
+                                    border-radius: 10px
+                                    border: 0
+                                    max-width: 520px
+                                    margin-bottom: 25px
+                                    &:hover
+                                        cursor: pointer
+                                .input-name:focus 
+                                    outline: none
+                                .input-name[placeholder] 
+                                    font-size: 30px
+                                    color: #8E8E8E
+                                    line-height: 50px
+                                    letter-spacing: 0.6px
+                                    padding: 8px 20px 8px 20px
+                                .input-number
+                                    border-radius: 10px
+                                    border: 0   
+                                    max-width: 520px
+                                    margin-bottom: 25px
+                                    &:hover
+                                        cursor: pointer
+                                .input-number:focus 
+                                    outline: none
+                                .input-number[placeholder] 
+                                    font-size: 30px
+                                    color: #8E8E8E
+                                    line-height: 50px
+                                    letter-spacing: 0.6px
+                                    padding: 8px 20px 8px 20px
+                            .form-btn
+                                display: flex
+                                margin: 0 auto
+                                margin-top: 15px
+                                font-size: 20px
+                                background: #fff
+                                @include inter-font
+                                letter-spacing: 1px
+                                border-radius: 2px
+                                border: 1px solid $black
+                                padding: 10px 40px
+                                font-weight: 700
+                                transition: all 300ms
+                                &:hover
+                                    cursor: pointer
+                                    transition: all 300ms
+                                    background: $brown-light
+                                    border: 1px solid $brown-light
+                    .LibraryCard-right
+                        .LibraryCard-right_title
+                            text-align: right
+                            font-size: 30px
+                            letter-spacing: 0.6px
+                            margin-bottom: 35px
+                        .LibraryCard-rigth_desc
+                            @include inter-font
+                            text-align: right
+                            max-width: 456px
+                            font-size: 20px
+                            letter-spacing: 0.4px
+                            line-height: 40px
+                            margin-bottom: 35px
+                        .Sign-Up
+                            display: inline-flex
+                            @include inter-font
+                            width: 75px
+                            height: 30px
+                            justify-content: center
+                            align-items: center
+                            font-size: 10px
+                            font-weight: 700
+                            letter-spacing: 1px
+                            margin-left: 284px
+                            margin-right: 20px
+                            padding: 10px 0px
+                            transition: all 300ms
+                            &:hover
+                                cursor: pointer
+                                transition: all 300ms
+                                background: $brown-light
+                                border: 1px solid $brown-light
+                        .Log-in
+                            display: inline-flex
+                            @include inter-font
+                            width: 75px
+                            height: 30px
+                            justify-content: center
+                            align-items: center
+                            font-size: 10px
+                            font-weight: 700
+                            letter-spacing: 1px
+                            padding: 10px 0px  
+                            transition: all 300ms
+                            &:hover
+                                cursor: pointer
+                                transition: all 300ms
+                                background: $brown-light
+                                border: 1px solid $brown-light           
+footer
+    background: $black
+    position: relative
+    .container
+        .wrapper
+            .block-footer_top
+                display: flex
+                justify-content: space-between
+                .block-footer_top-left
+                    .top-left-description
+                        padding-top: 19px
+                        color: #FFF
+                        @include inter-font
+                        font-size: 15px
+                        line-height: 20px
+                        width: 229px
+                        padding-bottom: 18px
+                    .footer-block_icons
+                        padding-bottom: 31px
+                        img
+                            margin-right: 11px
+                            &:hover
+                                cursor: pointer
+                .block-footer_top-right
+                    .desc-time
+                        @include inter-font
+                        padding-top: 20px
+                        text-align: right
+                        width: 149px
+                        font-size: 15px
+                        line-height: 20px
+                        color: #FFF
+                    .desc-time-bottom
+                        @include inter-font
+                        padding-top: 10px
+                        text-align: right
+                        width: 149px
+                        font-size: 15px
+                        line-height: 20px
+                        color: #FFF
+            .block-footer_bottom
+                border-top: 1px solid #fff
+                padding-top: 46px
+                display: flex
+                justify-content: space-between
+                .desc-year
+                    @include inter-font
+                    color: #FFF
+                    font-size: 15px
+                    line-height: 15px
+                    letter-spacing: 2px
+                    padding-bottom: 44px
+                .desc-school
+                    a
+                        @include inter-font
+                        color: #FFF
+                        text-decoration: none
+                        margin-left: 65px
+                        font-size: 15px
+                        line-height: 15px
+                        letter-spacing: 2px
+                .desc-username
+                    a
+                        @include inter-font
+                        text-decoration: none
+                        color: #FFF
+                        font-size: 15px
+                        line-height: 15px
+                        letter-spacing: 2px
+@media screen and (max-width: 1280px)
+    header
+        .container
+            .wrapper 
+                .header-block
+                    align-items: center
+                    flex-direction: column
+    main 
+        section.About
+            .container
+                .wrapper
+                    .About-sliders
+                        .About-cards-img
+                            display: flex
+                            flex-wrap: nowrap
+                            .image               
+                                max-width: 450px
+                                flex-shrink: 0
+                                margin: auto
+                                width: calc(100% / 2)
+                                height: 100%
+                        .block-circle-cards
+                            display: none
+                        .block-circle-cards-table
+                            display: flex
+                            justify-content: center
+                            margin-bottom: 51px
+                            .block-circle-card-table
+                                width: 26px
+                                height: 26px
+                                .circle-table
+                                    width: 16px
+                                    height: 16px
+                                    border-radius: 50%
+                                    background: #0C0C0E
+                                .active-table
+                                    width: 16px
+                                    height: 16px
+                                    border-radius: 50%
+                                    background: #BB945F
+        section.CoffeShop
+            .container
+                .wrapper
+                    .CoffeShop-cards-list
+                        flex-direction: column
+                        justify-content: center
+                        align-items: center
+                        .CoffeShop-card-list-left
+                            margin-bottom: 30px
+        section.Contacts
+            .container
+                .wrapper
+                    .Contacts-block
+                        flex-direction: column
+        section.Favorites 
+            .container .wrapper 
+                .Favorites-cards
+                    justify-content: center
+        section.LibraryCard 
+            .container .wrapper 
+                .LibraryCard-block
+                    flex-direction: column
+                    .LibraryCard-form
+                        margin: 0 auto
+                        width: 70%
+                        margin-bottom: 30px
+                        .form  
+                            .form-btn
+                    .LibraryCard-right
+                        .LibraryCard-right_title
+                            text-align: center
+                        .LibraryCard-rigth_desc
+                            margin: 0 auto
+                            text-align: center
+                            margin-bottom: 20px
+                        .LibraryCard-cards-btn
+                            position: relative
+                            display: flex
+                            justify-content: center
+                            align-items: center
+                            .Sign-Up
+                                margin-left: 0
+@media screen and (max-width: 1150px)
+    main 
+        section.Favorites 
+            .container 
+                .wrapper 
+                    .form-group
+                        display: flex
+                        justify-content: center
+                        flex-wrap: wrap
+                        gap: 10px
+        section.LibraryCard 
+            .container .wrapper 
+                .LibraryCard-block
+                    flex-direction: column
+                    .LibraryCard-form
+                        margin: 0 auto
+                        width: 90%
+                        margin-bottom: 30px
+                        .form  
+                            .form-btn
+                    .LibraryCard-right
+                        .LibraryCard-right_title
+                            text-align: center
+                        .LibraryCard-rigth_desc
+                            margin: 0 auto
+                            text-align: center
+                            margin-bottom: 20px
+                        .LibraryCard-cards-btn
+                            position: relative
+                            display: flex
+                            justify-content: center
+                            align-items: center
+                            .Sign-Up
+                                margin-left: 0
+@media screen and (max-width: 768px)
+    header
+        .container
+          .wrapper
+            .header-block
+                flex-direction: row
+                h1.logo
+                    a
+                nav
+                    display: none
+                .tablet-nav
+                    display: flex
+                    img.burger
+                        display: block
+                        margin-top: -3px
+                .Subtract
+                    margin-right: 40px
+    main
+        section.About
+            .container
+                .wrapper
+                    .About-sliders
+                        .About-cards-img
+                            display: flex
+                            flex-wrap: nowrap
+                            .image               
+                                max-width: 450px
+                                margin: auto
+                                justify-content: center
+                                width: 100%
+                                height: 100%
+                        .block-circle-cards-table
+                                display: none
+                        .block-circle-cards-mobile
+                            display: flex
+                            justify-content: center
+                            margin-bottom: 51px
+                            .block-circle-card-mobile
+                                width: 26px
+                                height: 26px
+                                .circle-mobile
+                                    width: 16px
+                                    height: 16px
+                                    border-radius: 50%
+                                    background: #0C0C0E
+                                .active-mobile
+                                    width: 16px
+                                    height: 16px
+                                    border-radius: 50%
+                                    background: #BB945F
+        section.Favorites
+            .container
+                .wrapper
+                    .form-group
+                        .label-radio
+                            margin-right: 20px
+                            font-size: 12px
+                        .label-radio:last-child
+                            margin-right: 0px
+                    .Favorites-cards
+                        .Favorites-card
+                            margin: 0 auto
+                            margin-bottom: 40px
+                            .Favorites-img
+                                display: none
+                        .Favorites-card:last-child
+                            margin-bottom: 0px
+        section.CoffeShop
+            .container
+                .wrapper
+                    .CoffeShop-cards-list
+                        flex-direction: column
+                        justify-content: center
+                        align-items: center
+                        .CoffeShop-card-list-left
+                            margin-bottom: 30px
+
+                            
+        section.Contacts
+            .container
+                .wrapper
+                    .Contacts-block
+                        flex-direction: column
+        section.LibraryCard
+            .container
+                .wrapper
+                    .LibraryCard-block
+                        flex-direction: column
+                        .LibraryCard-form
+                            margin-bottom: 30px
+                        .LibraryCard-right
+                            .LibraryCard-right_title
+                                text-align: center
+                            .LibraryCard-rigth_desc
+                                margin: 0 auto
+                                text-align: center
+                                margin-bottom: 20px
+@media screen and (max-width: 510px)
+    header
+        .container
+          .wrapper
+            .header-block
+                h1.logo
+                    a
+                        font-size: 20px
+                        line-height: 20px
+    main
+        section.Welcome
+            .container
+                .wrapper
+                    .welcome-bg 
+                        h2.welcome-title
+                            font-size: 20px
+        section.About
+            .container
+                .wrapper
+                    .About-sliders
+                        .About-cards-img
+                            display: flex
+                            flex-wrap: nowrap
+                            .image               
+                                max-width: 450px
+                                margin: auto
+                                justify-content: center
+                                width: 100%
+                                height: 100%
+                        .block-circle-cards-table
+                                display: none
+                        .block-circle-cards-mobile
+                            display: flex
+                            justify-content: center
+                            margin-bottom: 51px
+                            .block-circle-card-mobile
+                                width: 26px
+                                height: 26px
+                                .circle-mobile
+                                    width: 16px
+                                    height: 16px
+                                    border-radius: 50%
+                                    background: #0C0C0E
+                                .active-mobile
+                                    width: 16px
+                                    height: 16px
+                                    border-radius: 50%
+                                    background: #BB945F
+        section.Favorites
+            .container
+                .wrapper
+                    .input
+                        margin-right: 10px
+                    .form-group
+                        .label-radio
+                            margin-right: 10px
+                            font-size: 10px
+                        .label-radio:last-child
+                            margin-right: 0px
+                    .Favorites-cards
+                        .Favorites-card
+                            .Favorites-card-desc_book
+                                font-size: 13px
+                                line-height: 20px
+                            .Favorites-card-desc_dean
+                                font-size: 13px
+                            .Favorites-card-desc_story
+                                font-size: 10px
+                                line-height: 30px
+                            margin: 0 auto
+                            margin-bottom: 40px
+                            .Favorites-img
+                                display: none
+                        .Favorites-card:last-child
+                            margin-bottom: 0px
+        section.CoffeShop
+            .container
+                .wrapper
+                    .CoffeShop-cards-list
+                        flex-direction: column
+                        justify-content: center
+                        align-items: center
+                        .CoffeShop-card-list
+                            ul.CoffeShop-list-left
+                                li:after
+                                    display: none
+                        .CoffeShop-card-list-right
+                            ul.CoffeShop-list-right 
+                                li:after
+                                    display: none
+                                
+
+                            
+        section.Contacts
+            .container
+                .wrapper
+                    .Contacts-block
+                        flex-direction: column
+        section.LibraryCard
+            .container
+                .wrapper
+                    .LibraryCard-block
+                        flex-direction: column
+                        .LibraryCard-form
+                            margin-bottom: 30px
+                            .form
+                                .form-inrut
+                                    min-height: 275px
+                                    .form-title
+                                        margin-top: 0
+                                        font-size: 20px
+                                        margin-bottom: 0
+                                    .input-name[placeholder]
+                                        font-size: 15px
+                                    .input-number[placeholder]
+                                        font-size: 15px
+                                .form-btn
+                                    font-size: 10px
+                        .LibraryCard-right
+                            .LibraryCard-right_title
+                                text-align: center
+                            .LibraryCard-rigth_desc
+                                margin: 0 auto
+                                text-align: center
+                                margin-bottom: 20px
+    footer
+        .container
+            .wrapper
+                .block-footer_bottom
+                    flex-direction: column
+                    .desc-school
+                        padding-bottom: 20px
+                        a
+                            margin-left: 0px
+                            font-size: 12px
+
+
+
+                
+
+
+
+
+
+                        

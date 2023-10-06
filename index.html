@@ -1,0 +1,384 @@
+                                    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>library</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="./img/favicon_io/favicon-32x32.png" sizes="32x32" href="./img/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="./img/favicon_io/site.webmanifest">
+    <link href="https://fonts.googleapis.com/css2?family=Forum&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="wrapper">
+                <div class="header-block">
+                    <h1 class="logo"><a href="#">Brooklyn Public Library</a></h1>
+                    <nav>
+                        <ul>
+                            <li><a class="active" href="#About">About</a></li>
+                            <li><a class="" href="#Favorites">Favorites</a></li>
+                            <li><a class="" href="#CoffeShop">Coffee shop</a></li>
+                            <li><a class="" href="#Contacts">Contacts</a></li>
+                            <li><a class="" href="#LibraryCard">Library Card</a></li>
+                        </ul>
+                    </nav>
+                    <div class="tablet-nav">
+                        <a href="#"><img class="Subtract" src="./icons/Subtract.svg" alt="Subtract"></a>
+                        <img class="burger" src="./icons/burger.svg" alt="burger">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="Welcome" id="Welcome">
+            <div class="container">
+                <div class="wrapper">
+                    <div class="welcome-bg">
+                        <h2 class="welcome-title">Welcome <br> 
+                            to the Brooklyn Library</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="About" id="About">
+            <div class="container">
+                <div class="wrapper">
+                    <h2 class="About-title">About</h2>
+                    <p class="About-description">The Brooklyn Library is a free workspace, a large number of books and a cozy coffee shop inside </p>
+                    <div class="About-sliders">
+                        <div class="About-cards-img">
+                            <img class="image image-1" src="./img/image-1.jpg" alt="image-1">
+                            <img class="image image-2" src="./img/image-2.jpg" alt="image-2">
+                            <img class="image image-3" src="./img/image-3.jpg" alt="image-3">
+                            <img class="image image-4" src="./img/image-4.jpg" alt="image-4">
+                            <img class="image image-5" src="./img/image-5.jpg" alt="image-5">
+                        </div>
+                        <div class="block-circle-cards">
+                            <div class="block-circle-card">
+                                <div class="circle active"></div>
+                            </div>
+                            <div class="block-circle-card">
+                                <div class="circle"></div>
+                            </div>
+                            <div class="block-circle-card">
+                                <div class="circle"></div>
+                            </div>
+                        </div>
+                        <div class="block-circle-cards-table">
+                            <div class="block-circle-card-table">
+                                <div class="circle-table active-table"></div>
+                            </div>
+                            <div class="block-circle-card-table">
+                                <div class="circle-table"></div>
+                            </div>
+                            <div class="block-circle-card-table">
+                                <div class="circle-table"></div>
+                            </div>
+                            <div class="block-circle-card-table">
+                                <div class="circle-table"></div>
+                            </div>
+                        </div>
+                        <div class="block-circle-cards-mobile">
+                            <div class="block-circle-card-mobile">
+                                <div class="circle-mobile active-mobile"></div>
+                            </div>
+                            <div class="block-circle-card-mobile">
+                                <div class="circle-mobile"></div>
+                            </div>
+                            <div class="block-circle-card-mobile">
+                                <div class="circle-mobile"></div>
+                            </div>
+                            <div class="block-circle-card-mobile">
+                                <div class="circle-mobile"></div>
+                            </div>
+                            <div class="block-circle-card-mobile">
+                                <div class="circle-mobile"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="Favorites" id="Favorites">
+            <div class="container">
+                <div class="wrapper">
+                    <h2 class="Favorites-title">Favorites</h2>
+                    <p class="Favorites-description">Pick favorites of season</p>
+                    <div class="form-group">
+                        <div class="input-card">
+                            <input class="input" type="radio" name="Favorites" id="Favorites-radio"> 
+                            <label class="label-radio" for="Favorites-radio">Winter</label>
+                        </div>
+                        <div class="input-card">
+                            <input class="input" type="radio" name="Favorites" id="Favorites-spring"> 
+                            <label class="label-radio" for="Favorites-spring">Spring</label>
+                        </div>
+                        <div class="input-card">
+                            <input class="input" type="radio" name="Favorites" id="Favorites-summer"> 
+                            <label class="label-radio" for="Favorites-summer">Summer</label>
+                        </div>
+                        <div class="input-card">
+                            <input class="input" type="radio" name="Favorites" id="Favorites-autumn"> 
+                            <label class="label-radio" for="Favorites-autumn">Autumn</label>
+                        </div>
+                    </div>
+                    <div class="Favorites-cards">
+                        <div class="Favorites-card">
+                            <p class="Favorites-card-desc">Staff Picks</p>
+                            <p class="Favorites-card-desc_book">The Book Eaters</p>
+                            <p class="Favorites-card-desc_dean">By Sunyi Dean</p>
+                            <p class="Favorites-card-desc_story">An unusual sci-fi story about a book eater woman who tries desperately to save her dangerous mind-eater son from tradition and certain death. Complete with dysfunctional family values, light Sapphic romance, and a strong, complex protagonist. Not for the faint of heart.</p>
+                            <img class="Favorites-img" src="./img/book-1.jpg" alt="book-1">
+                            <button class="Favorites-btn">Buy</button>
+                        </div>
+                        <div class="Favorites-card">
+                            <p class="Favorites-card-desc">Staff Picks</p>
+                            <p class="Favorites-card-desc_book">Cackle</p>
+                            <p class="Favorites-card-desc_dean">By Rachel Harrison</p>
+                            <p class="Favorites-card-desc_story">Are your Halloween movies of choice The Witches of Eastwick and Practical Magic? Look no further than here - where a woman recovering from a breakup moves to a quaint town in upstate New York and befriends a beautiful witch.</p>
+                            <img class="Favorites-img" src="./img/book-2.jpg" alt="book-2">
+                            <button class="Favorites-btn">Buy</button>
+                        </div>
+                        <div class="Favorites-card">
+                            <p class="Favorites-card-desc">Staff Picks</p>
+                            <p class="Favorites-card-desc_book">Dante: Poet of the Secular World</p>
+                            <p class="Favorites-card-desc_dean">By Erich Auerbach</p>
+                            <p class="Favorites-card-desc_story">Auerbach's engaging book places the 'Comedy' within the tradition of epic, tragedy, and philosophy in general, arguing for Dante's uniqueness as one who raised the individual and his drama of soul into something of divine significance—an inspired introduction to Dante's main themes.</p>
+                            <img class="Favorites-img" src="./img/book-3.jpg" alt="book-3">
+                            <button class="Favorites-btn">Buy</button>
+                        </div>
+                        <div class="Favorites-card">
+                            <p class="Favorites-card-desc">Staff Picks</p>
+                            <p class="Favorites-card-desc_book">The Last Queen</p>
+                            <p class="Favorites-card-desc_dean">By Clive Irving</p>
+                            <p class="Favorites-card-desc_story">A timely and revelatory new biography of Queen Elizabeth (and her family) exploring how the Windsors have evolved and thrived as the modern world has changed around them.</p>
+                            <img class="Favorites-img" src="./img/book-4.jpg" alt="book-4">
+                            <button class="Favorites-btn">Buy</button>
+                        </div>
+                    </div>
+                    <div class="Favorites-cards">
+                        <div class="Favorites-card">
+                            <p class="Favorites-card-desc">Staff Picks</p>
+                            <p class="Favorites-card-desc_book">The Book Eaters</p>
+                            <p class="Favorites-card-desc_dean">By Sunyi Dean</p>
+                            <p class="Favorites-card-desc_story">An unusual sci-fi story about a book eater woman who tries desperately to save her dangerous mind-eater son from tradition and certain death. Complete with dysfunctional family values, light Sapphic romance, and a strong, complex protagonist. Not for the faint of heart.</p>
+                            <img class="Favorites-img" src="./img/book-5.jpg" alt="book-1">
+                            <button class="Favorites-btn">Buy</button>
+                        </div>
+                        <div class="Favorites-card">
+                            <p class="Favorites-card-desc">Staff Picks</p>
+                            <p class="Favorites-card-desc_book">Cackle</p>
+                            <p class="Favorites-card-desc_dean">By Rachel Harrison</p>
+                            <p class="Favorites-card-desc_story">Are your Halloween movies of choice The Witches of Eastwick and Practical Magic? Look no further than here - where a woman recovering from a breakup moves to a quaint town in upstate New York and befriends a beautiful witch.</p>
+                            <img class="Favorites-img" src="./img/book-6.jpg" alt="book-2">
+                            <button class="Favorites-btn">Buy</button>
+                        </div>
+                        <div class="Favorites-card">
+                            <p class="Favorites-card-desc">Staff Picks</p>
+                            <p class="Favorites-card-desc_book">Dante: Poet of the Secular World</p>
+                            <p class="Favorites-card-desc_dean">By Erich Auerbach</p>
+                            <p class="Favorites-card-desc_story">Auerbach's engaging book places the 'Comedy' within the tradition of epic, tragedy, and philosophy in general, arguing for Dante's uniqueness as one who raised the individual and his drama of soul into something of divine significance—an inspired introduction to Dante's main themes.</p>
+                            <img class="Favorites-img" src="./img/book-7.jpg" alt="book-3">
+                            <button class="Favorites-btn">Buy</button>
+                        </div>
+                        <div class="Favorites-card">
+                            <p class="Favorites-card-desc">Staff Picks</p>
+                            <p class="Favorites-card-desc_book">The Last Queen</p>
+                            <p class="Favorites-card-desc_dean">By Clive Irving</p>
+                            <p class="Favorites-card-desc_story">A timely and revelatory new biography of Queen Elizabeth (and her family) exploring how the Windsors have evolved and thrived as the modern world has changed around them.</p>
+                            <img class="Favorites-img" src="./img/book-8.jpg" alt="book-4">
+                            <button class="Favorites-btn">Buy</button>
+                        </div>
+                    </div>
+                    <div class="Favorites-cards">
+                        <div class="Favorites-card">
+                            <p class="Favorites-card-desc">Staff Picks</p>
+                            <p class="Favorites-card-desc_book">The Book Eaters</p>
+                            <p class="Favorites-card-desc_dean">By Sunyi Dean</p>
+                            <p class="Favorites-card-desc_story">An unusual sci-fi story about a book eater woman who tries desperately to save her dangerous mind-eater son from tradition and certain death. Complete with dysfunctional family values, light Sapphic romance, and a strong, complex protagonist. Not for the faint of heart.</p>
+                            <img class="Favorites-img" src="./img/book-9.jpg" alt="book-1">
+                            <button class="Favorites-btn">Buy</button>
+                        </div>
+                        <div class="Favorites-card">
+                            <p class="Favorites-card-desc">Staff Picks</p>
+                            <p class="Favorites-card-desc_book">Cackle</p>
+                            <p class="Favorites-card-desc_dean">By Rachel Harrison</p>
+                            <p class="Favorites-card-desc_story">Are your Halloween movies of choice The Witches of Eastwick and Practical Magic? Look no further than here - where a woman recovering from a breakup moves to a quaint town in upstate New York and befriends a beautiful witch.</p>
+                            <img class="Favorites-img" src="./img/book-10.jpg" alt="book-2">
+                            <button class="Favorites-btn">Buy</button>
+                        </div>
+                        <div class="Favorites-card">
+                            <p class="Favorites-card-desc">Staff Picks</p>
+                            <p class="Favorites-card-desc_book">Dante: Poet of the Secular World</p>
+                            <p class="Favorites-card-desc_dean">By Erich Auerbach</p>
+                            <p class="Favorites-card-desc_story">Auerbach's engaging book places the 'Comedy' within the tradition of epic, tragedy, and philosophy in general, arguing for Dante's uniqueness as one who raised the individual and his drama of soul into something of divine significance—an inspired introduction to Dante's main themes.</p>
+                            <img class="Favorites-img" src="./img/book-11.jpg" alt="book-3">
+                            <button class="Favorites-btn">Buy</button>
+                        </div>
+                        <div class="Favorites-card">
+                            <p class="Favorites-card-desc">Staff Picks</p>
+                            <p class="Favorites-card-desc_book">The Last Queen</p>
+                            <p class="Favorites-card-desc_dean">By Clive Irving</p>
+                            <p class="Favorites-card-desc_story">A timely and revelatory new biography of Queen Elizabeth (and her family) exploring how the Windsors have evolved and thrived as the modern world has changed around them.</p>
+                            <img class="Favorites-img" src="./img/book-12.jpg" alt="book-4">
+                            <button class="Favorites-btn">Buy</button>
+                        </div>
+                    </div>
+                    <div class="Favorites-cards">
+                        <div class="Favorites-card">
+                            <p class="Favorites-card-desc">Staff Picks</p>
+                            <p class="Favorites-card-desc_book">The Book Eaters</p>
+                            <p class="Favorites-card-desc_dean">By Sunyi Dean</p>
+                            <p class="Favorites-card-desc_story">An unusual sci-fi story about a book eater woman who tries desperately to save her dangerous mind-eater son from tradition and certain death. Complete with dysfunctional family values, light Sapphic romance, and a strong, complex protagonist. Not for the faint of heart.</p>
+                            <img class="Favorites-img" src="./img/book-13.jpg" alt="book-1">
+                            <button class="Favorites-btn">Buy</button>
+                        </div>
+                        <div class="Favorites-card">
+                            <p class="Favorites-card-desc">Staff Picks</p>
+                            <p class="Favorites-card-desc_book">Cackle</p>
+                            <p class="Favorites-card-desc_dean">By Rachel Harrison</p>
+                            <p class="Favorites-card-desc_story">Are your Halloween movies of choice The Witches of Eastwick and Practical Magic? Look no further than here - where a woman recovering from a breakup moves to a quaint town in upstate New York and befriends a beautiful witch.</p>
+                            <img class="Favorites-img" src="./img/book-14.jpg" alt="book-2">
+                            <button class="Favorites-btn">Buy</button>
+                        </div>
+                        <div class="Favorites-card">
+                            <p class="Favorites-card-desc">Staff Picks</p>
+                            <p class="Favorites-card-desc_book">Dante: Poet of the Secular World</p>
+                            <p class="Favorites-card-desc_dean">By Erich Auerbach</p>
+                            <p class="Favorites-card-desc_story">Auerbach's engaging book places the 'Comedy' within the tradition of epic, tragedy, and philosophy in general, arguing for Dante's uniqueness as one who raised the individual and his drama of soul into something of divine significance—an inspired introduction to Dante's main themes.</p>
+                            <img class="Favorites-img" src="./img/book-15.jpg" alt="book-3">
+                            <button class="Favorites-btn">Buy</button>
+                        </div>
+                        <div class="Favorites-card">
+                            <p class="Favorites-card-desc">Staff Picks</p>
+                            <p class="Favorites-card-desc_book">The Last Queen</p>
+                            <p class="Favorites-card-desc_dean">By Clive Irving</p>
+                            <p class="Favorites-card-desc_story">A timely and revelatory new biography of Queen Elizabeth (and her family) exploring how the Windsors have evolved and thrived as the modern world has changed around them.</p>
+                            <img class="Favorites-img" src="./img/book-16.jpg" alt="book-4">
+                            <button class="Favorites-btn">Buy</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="CoffeShop" id="CoffeShop">
+            <div class="container">
+                <div class="wrapper">
+                    <h2 class="CoffeShop-title">Coffee shop</h2>
+                    <p class="CoffeShop-description">In our library, we have of cozy coffee shop, welcoming in customers with frothy cappuccinos and friendly conversation. 
+                        you can get a favorite book and read in coffee shop. Our barista to cook you best coffee, and also you can try desserts from bakery.</p>
+                    <div class="CoffeShop-cards-list">
+                        <div class="CoffeShop-card-list">
+                            <h3 class="CoffeShop-card-title">Coffee & Tea</h3>
+                            <ul class="CoffeShop-list-left">
+                                <li>Cold Brew Coffee <span>$3</span></li>
+                                <li>French Press Pot <span>$5</span></li>
+                                <li>Espresso <span>$2</span></li>
+                                <li>Cappuccino <span>$4</span></li>
+                                <li>Hot tea <span>$2</span></li>
+                                <li>Cold tea <span>$2</span></li>
+                            </ul>
+                        </div>
+                        <div class="CoffeShop-card-list-right">
+                            <h3 class="CoffeShop-card-title right-title">Desserts & Cakes</h3>
+                            <ul class="CoffeShop-list-right">
+                                <li>Forest Gateau <span>$16</span></li>
+                                <li>Blue Moon <span>$16</span></li>
+                                <li>Truffle Cake <span>$15</span></li>
+                                <li>Chocolate Cake <span>$18</span></li>
+                                <li>Poet’s Dream Cake <span>$16</span></li>
+                                <li>Pineapple Cake <span>$14</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="Contacts" id="Contacts">
+            <div class="container">
+                <div class="wrapper">
+                    <h2 class="Contacts-title">Our Contacts</h2>
+                    <div class="Contacts-block">
+                        <div class="Contacts-description">
+                            <h4 class="Contacts-title-question">For all Library inquiries:</h4>
+                            <div class="Contacts-desc_contacts-staff">
+                                <p class="Contacts-desc_staff">Please call (617) 730-2370</p>
+                                <p class="Contacts-desc_staff">For TTY service, please call (617) 730-2370</p>
+                                <p class="Contacts-desc_staff">Putterham Library: (617) 730-2385</p>
+                            </div>
+                            <h4 class="Contacts-title-staff">Senior Staff</h4>
+                            <div class="Contacts-desc_contacts-director">
+                                <p class="Contacts-desc_director">Library Director:</p><span class="Contacts-desc_name">Amanda Hirst</span>
+                            </div>
+                        </div>
+                        <div class="Contacts-map">
+                            <img class="map" src="./img/map.jpg" alt="map">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="LibraryCard" id="LibraryCard">
+            <div class="container">
+                <div class="wrapper">
+                    <h2 class="LibraryCard-title">Digital Library Cards</h2>
+                    <div class="LibraryCard-block">
+                        <div class="LibraryCard-form">
+                            <h4 class="LibraryCard-form_title">Find your Library card</h4>
+                            <form class="form">
+                                <div class="form-inrut">
+                                    <h5 class="form-title">Brooklyn Public Library</h5>
+                                    <input class="input-name" type="text"
+                                    placeholder="Reader's name">
+                                    <input class="input-number" type="text"
+                                    placeholder="Card number">
+                                </div>
+                                <button class="form-btn">Check the card</button>
+                            </form>
+                        </div>
+                        <div class="LibraryCard-right">
+                            <h4 class="LibraryCard-right_title">Get a reader card</h4>
+                            <p class="LibraryCard-rigth_desc">You will be able to see a reader card after logging into account or you can register a new account</p>
+                            <div class="LibraryCard-cards-btn">
+                                <button class="Sign-Up">Sign Up</button>
+                                <button class="Log-in">Log in</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="wrapper">
+                <div class="block-footer_top">
+                    <div class="block-footer_top-left">
+                        <p class="top-left-description">286 Cadman Plaza, New York, NY 11238, United States</p>
+                        <div class="footer-block_icons">
+                            <img class="twitter" src="./icons/u_twitter-alt.svg" alt="twitter">
+                            <img class="instagram" src="./icons/u_instagram.svg" alt="instagram">
+                            <img class="facebook" src="./icons/u_facebook-f.svg" alt="facebook">
+                        </div>
+                    </div>
+                    <div class="block-footer_top-right">
+                        <p class="desc-time">Mon - Fri <br> 08:00 am - 07:00 pm</p>
+                        <p class="desc-time-bottom">Sat - Sun <br> 10:00 am - 06:00 pm</p>
+                    </div>
+                </div>
+                <div class="block-footer_bottom">
+                    <p class="desc-year">2023</p>
+                    <p class="desc-school"><a href="https://rs.school/js-stage0/">The Rolling Scopes School</a></p>
+                    <p class="desc-username"><a href="https://github.com/atkbrc354">atkbrc354</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/main.js"></script>
+</body>
+</html>
